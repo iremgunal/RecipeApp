@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Recipe App</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="nav" id="nav">
+            <div class="row">
+                <div class="column">
+                    <a href="#" class="logo">
+                        <img src="images/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="column">
+                    <div class="navigation">
+                        <ul class="navigation-items">
+                            <li> <a href="#header">Home</a> </li>
+                            <li><a href="#recipeList">Recipes</a> </li>
+                            <li><a href="#footer">Contact</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <header class="main" id="header">
+            <div class="main-content">
+                <h1>Find the recipe you want</h1>
+                <form>
+                    <input type="text" id="search" placeholder="Search Recipe">
+                    <button type="button" id="submit" class="search-btn">Search</button>
+                </form>
+            </div>
+
+        </header>
+        <section>
+            <div class="recipe-list" id="recipeList"></div>
+            <div class="recipe-details">
+                <button type="button" class="recipe-close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="recipe-details-content"></div>
+            </div>
+        </section>
+
+
+
+        <footer class="footer" id="footer">
+            <div class="footer-title">
+                <h2>Contact</h2>
+                <div class="line"></div>
+            </div>
+            <div class="contact-wrapper">
+                <form id="contact-form" class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value=""
+                                required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email"
+                                value="" required>
+                        </div>
+                    </div>
+                    <textarea name="message" class="form-control" placeholder="MESSAGE" rows="10" required></textarea>
+
+                    <button class="btn send-button" type="submit" value="SEND">
+                        <span class="send-text">SEND</span>
+                    </button>
+                </form>
+            </div>
+
+            <div class="footer-content">
+                <h3>Recipe App</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+
+                <div class="footer-links">
+                    <a href="#">Home Page</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
